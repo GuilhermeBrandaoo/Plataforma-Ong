@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>ONG</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Gestão ONG</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link">Início</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#cadastro" class="nav-link">Criar Conta</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="img_principal">
+      <img src="assets/img_principal.png" alt="" width="300">
+    </section>
+
+    <section class="spa">
+        <!-- 1 PÁGINA INICIAL -->
+        <section id="home" class="spa-section">
+          <h2>Bem-vindo!</h2>
+          <p>Plataforma para conectar ONGs, doadores e voluntários.</p>
+        </section>
+
+        <!-- 2 PÁGINA DE PROJETOS -->
+        <section id="projetos" class="spa-section" style="display:none;">
+    <section class="projetos">
+      <h2>Conheça nossos projetos</h2>
+
+      <div class="projetos_ativos">
+      <article>
+        <h3>Educação para o Futuro</h3>
+        <p>Projeto educativo que oferece reforço escolar gratuito para crianças e adolescentes.</p>
+        <br>
+        <p>Como ajudar: seja voluntário ensinando ou doando materiais escolares.</p>
+        <p>Local:</p>
+        <p>Participantes:</p>
+        <button>Quero ser voluntario</button>
+      </article>
+
+            <article>
+        <h3>Educação para o Futuro</h3>
+        <p>Projeto educativo que oferece reforço escolar gratuito para crianças e adolescentes.</p>
+        <br>
+        <p>Como ajudar: seja voluntário ensinando ou doando materiais escolares.</p>
+        <p>Local:</p>
+        <p>Participantes:</p>
+        <button>Quero ser voluntario</button>
+      </article>
+      </div>
+
+      <button>Ver mais</button>
+    </section>
+        </section>
+
+        <!-- 3 PÁGINA DE CADASTRO -->
+        <section id="cadastro" class="spa-section" style="display:none;">
+          <section class="btn">
+              <h1>Criar Conta</h1>
+              <button id="btnOng">Sou uma ONG</button>
+              <button id="btnVoluntario">Sou um Voluntário</button>
+          </section>
+        <section class="cadastros"> 
+        <section>
+        <h2>Cadastro ONG</h2>
+        <form action="" id="form_ong">
+          <label for=""> Nome da ONG:</label>
+          <input type="text" id="nome_ong" />
+
+          <label for=""> Email: </label>
+          <input type="email" id="email_ong" />
+
+          <label for=""> Telefone: </label>
+          <input type="tel" id="telefone_ong" />
+
+          <label for=""> CNPJ: </label>
+          <input
+            type="text"
+            id="cnpj_ong"
+            placeholder="00.000.000/0000-00"
+            title="Formato: 00.000.000/0000-00"
+          />
+
+          <label for=""> Senha: </label>
+          <input type="password" id="senha_ong" />
+          <button type="submit">Criar conta</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Cadastro Voluntário</h2>
+        <form action="" id="form_voluntario">
+          <label for=""> Nome completo: </label>
+          <input type="text" id="nome_voluntario" />
+
+          <label for=""> Email: </label>
+          <input type="email" id="email_voluntario" />
+          <label for=""> CPF: </label>
+          <input
+            type="text"
+            id="cpf"
+            placeholder="000.000.000-00"
+            title="Formato: 000.000.000-00"
+          />
+
+          <label for=""> CEP: </label>
+          <input
+            type="text"
+            id="cep"
+            pattern="\d{5}-\d{3}"
+            placeholder="00000-000"
+            title="Formato: 00000-000"
+          />
+
+          <label for="estado_voluntario">
+            Estado:
+            <br>
+            <select id="estado_voluntario">
+              <option value="">Selecione</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+            
+          </label>
+          <br>
+          <label for=""> Cidade: </label>
+          <input type="text" id="cidade" />
+
+          <label for=""> Telefone: </label>
+          <input
+            type="tel"
+            id="telefone"
+            maxlength="15"
+            placeholder="(XX)XXXXX-XXXX"/>
+
+          <label for=""> Senha: </label>
+          <input type="password" id="senha_voluntario" />
+
+          <button type="submit">Criar conta</button>
+        </form>
+      </section>
+        </section>
+        </section>
+    </section>
+
+    <main>
+      <div class="titulomain">
+      <h1>Uma plataforma completa para transformar a gestão das ONGs.</h1>
+      </div>
+      <div class="descMain">
+        <h3>
+          Gerencie projetos, voluntários e doações em um só lugar — com
+          transparência, eficiência e impacto real.
+        </h3>
+        <button>Ser Voluntario</button>
+        <button>Sou uma ONG</button>
+        <button>Faça doação</button>
+      </div>
+    </main>
+
+    <article class="sobre">
+      <h2>Sobre a plataforma</h2>
+      <p>
+        A <strong>Gestão ONG</strong> é um sistema web desenvolvido para ajudar ONGs a
+        gerenciar suas atividades com mais eficiência. Aqui, cada organização
+        tem um painel exclusivo para cadastrar projetos, controlar voluntários,
+        receber doações e divulgar resultados com total transparência.
+      </p>
+      <button>Saiba mais</button>
+    </article>
+
+    <section class="info">
+      <h2>Tudo o que sua ONG precisa em um só lugar</h2>
+      <div class="infologo">
+      <article class="logo">
+        <img src="assets/monitor-de-painel.svg" alt="" width="50"/>
+        <h3>Painel Administrativo</h3>
+        <p>controle completo de projetos, doações e voluntários.</p>
+      </article>
+
+      <article class="logo">
+        <img src="assets/do-utilizador.svg" alt="" width="50"/>
+        <h3>Portal do Voluntário</h4>
+        <p>área personalizada para acompanhar inscrições e certificados.</p>
+      </article>
+
+      <article class="logo">
+        <img src="assets/doar.svg" alt="" width="50"/>
+        <h3>Área do Doador</h3>
+        <p>histórico de doações e relatórios de impacto.</p>
+      </article>
+
+      <article class="logo">
+        <img src="assets/chamada-perdida.svg" alt="" width="50"/>
+        <h3>Transparência e Comunicação</h3>
+        <p>publique relatórios, notícias e metas alcançadas</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="paraquem">
+      <div class="paraquem-titulo">
+        <h2>Para quem é?</h2>
+      </div>
+      <div class="paraquem-info">
+        <img src="/assets/img2.png.jpg" alt="" width="300">
+        <ul>
+          <li><strong>ONGs:</strong> gestão completa de projetos e doações.</li>
+          <li><strong>Voluntários:</strong> encontre e participe de ações sociais.</li>
+          <li><strong>Doadores:</strong> acompanhe o impacto da sua contribuição.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="comofunciona">
+      <div class="comofunciona-titulo">
+        <h2>Como funciona</h2>
+      </div>
+      <div class="comofunciona-info">
+        <img src="assets/img3.jpg" alt="" width="300">
+        <ol>
+          <li><a href="#">Cadastre sua ONG.</a></li>
+          <li><a href="#">Publique seus projetos.</a></li>
+          <li><a href="#">Gerencie tudo pelo painel.</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#">Politica de privacidade</a>
+            <a href="#">Termos de uso</a>
+            <a href="#">Contato</a>
+        </nav>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/cadastro.js"></script>
+  </body>
+</html>

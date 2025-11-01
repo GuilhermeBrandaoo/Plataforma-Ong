@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #2E8B57;
+    --secundary-color: #A8D5BA;
+    --white: #FFFFFF;
+    --cinza-claro: #F4F4F4;
+    --cinza-escuro: #333333;
+    --destaque: #F9C74F;
+    --destaque2: #FFD166;
+    --complementar: #5FA8D3;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 12vh;
+    width: 100%;
+    background-color: var(--cinza-escuro);
+
+}
+
+
+header h1 {
+    color: var(--primary-color);
+}
+
+
+header nav ul li, a{
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+    color: var(--secundary-color);
+}
+
+.img_principal {
+    width: 100%;
+    height: 100vh;
+}
+
+.img_principal img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.spa {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .titulomain h1 {
+    font-size: 4rem;
+    color: var(--primary-color)
+}
+
+.projetos {
+    height: 120vh;
+    margin-top: 8vh;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+}
+
+.projetos_ativos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projetos h2{
+    padding-top: 8vh;
+    text-align: center;
+    margin-bottom: 10vh;
+    font-size: 4rem;
+}
+
+.projetos article {
+    width: 400px;
+    height: 290px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 4rem;
+    padding-top: 1.2rem;
+}
+
+.projetos article h3 {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.projetos article p {
+    line-height: 25px;
+}
+
+.projetos article button {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.projetos button {
+    color: white;
+    background-color: var(--secundary-color);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+
+.btn {
+    padding: 50px;
+    text-align: center;
+}
+
+.btn h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.btn button {
+    margin-top: 2rem;
+    padding: 30px;
+    background-color: rgba(37, 37, 37, 0);
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    color: var(--primary-color);
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.cadastros {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 150vh;
+}
+
+.cadastros section h2{
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.cadastros section {
+    display: grid;
+    width: 500px;
+    height: 850px;
+    background-color: rgba(37, 37, 37, 0);
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    color: black;
+    margin: 20px;
+}
+
+.cadastros section form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cadastros section form input {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
+.cadastros section form button {
+    border: 1px solid black;
+    width: 200px;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+}
+
+.cadastros input {
+    color: black;
+}
+
+.cadastros select {
+    color: var(--primary-color);
+}
+
+.titulomain {
+    margin-top: 20vh;
+    display: flex;
+    width: 70vw;
+}
+
+.descMain {
+    margin-top: 8vh;
+}
+
+.descMain h3 {
+    font-size: 4vh;
+    font-weight: 600;
+    color: var(--secundary-color)
+}
+
+.descMain button {
+    margin-top: 6vh;
+    margin-left: 2vw;
+    padding: 20px;
+    border: none;
+    color: var(--cinza-claro);
+    background-color: var(--destaque);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.descMain button:hover{
+    background-color: var(--destaque2);
+}
+
+.sobre {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre h2 {
+    margin-top: 8vh;
+    font-size: 10vh;
+}
+
+.sobre p {
+    margin-top: 5vh;
+    font-size: 1.1rem;
+    width: 40vw;
+}
+
+.sobre button {
+    color: white;
+    background-color: var(--destaque);
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.sobre button:hover {
+    background-color: var(--destaque2);
+}
+
+.info {
+    display: grid;
+    width: 100%;
+    height: 120vh;
+    align-items: center;
+}
+
+.info h2 {
+    text-align: center;
+    margin-top: 8vh;
+    font-size: 8vh;
+    color: var(--primary-color);
+}
+
+.infologo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.logo {
+    padding: 3rem;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 0 auto;
+    width: 500px;
+    color: var(--cinza-escuro)
+}
+
+.logo:hover {
+    box-shadow: 4px 4px 40px var(--cinza-claro);
+    transition: 0.5s;
+}
+
+.paraquem {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--complementar);
+}
+
+.paraquem-titulo h2 {
+    padding: 8vh 0 10vh 0;
+    font-size: 4rem;
+}
+
+.paraquem-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.paraquem-info img {
+    border-radius: 700%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.paraquem ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.comofunciona {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.comofunciona-titulo h2 {
+    padding: 8vh 0 10vh 0;
+    font-size: 4rem;
+}
+
+.comofunciona-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comofunciona-info img {
+    border-radius: 700%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.comofunciona ol {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.comofunciona a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--cinza-escuro);
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30vh;
+        padding: 10px;
+    }
+
+    main .titulomain h1 {
+        font-size: 2rem;   
+    }
+
+    main .descMain h3 {
+        font-size: 1.2rem;
+        width: 85vw;
+    }
+
+    .descMain button {
+        margin: 20px auto;
+    }
+
+    .sobre {
+        height: 10vh;
+    }
+
+    .sobre h2{
+        font-size: 2rem;
+        
+    }
+
+    .sobre p {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 85vw;
+        font-weight: 300;
+    }
+
+
+    .info h2 {
+        font-size: 2rem;
+    }
+
+    .infologo{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .logo {
+        width: 80vw;
+    }
+
+    .paraquem {
+        margin-top: 200px;
+    }
+
+    .paraquem-titulo h2 {
+        font-size: 2rem;
+    }
+
+    .paraquem-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paraquem-info img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .paraquem-info ul li {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .comofunciona-titulo h2{
+        font-size: 2rem;
+    }
+
+    .comofunciona-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comofunciona-info img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .comofunciona-info ol{
+        line-height: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .sobre {
+        height: 80vh;
+    }
+
+
+}
