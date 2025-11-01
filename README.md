@@ -18,4 +18,4 @@ Uma plataforma web completa para que ONGs possam gerenciar projetos, voluntário
 ## ⚙️ Como executar
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seuusuario/plataforma-ongs.git
+   git clone https://github.com/GuilhermeBrandaoo/plataforma-ongs.git
